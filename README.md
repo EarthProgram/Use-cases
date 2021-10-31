@@ -1,2 +1,3 @@
-# use-cases
-Use cases and requirements for achieving the Interchain Earth Mission
+# Interchain Earth Program Use Cases & Requirements
+
+This repository is the home to the Earth Program Use Cases & Requirements document.
