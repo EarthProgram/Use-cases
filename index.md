@@ -101,8 +101,6 @@ Contributed by Grace Rachmany
     b. Sarafu
     c. SEEDS
  
- ( I believe we agreed to split this into two use cases, keeping the purely crypto-crypto exchange for the focal use case and raising the crypto -> non-crypto use case in the domain map rather than as a focal use case.
- 
  ### Trust/Liability Hierarchy
  1. Nina needs to trust that Grace has a legitimate wallet.
  2. The Circles and chiemgauer networks need to trust one another to meet their financial obligations in case of trade imbalances.
