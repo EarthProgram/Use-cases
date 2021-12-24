@@ -143,5 +143,8 @@ Contributed by Grace Rachmany
  (can we tie this more clearly to a specific SDG?)
  
  ## Diversity & Inclusion
+
+These currencies are open to different communities and are intrinsically both inclusive and exclusive. Communties retain their culture and values, while encouraging local economies, which is exclusive. They can now trade with one another, which is inclusive. 
+
  ## Requirements
 
