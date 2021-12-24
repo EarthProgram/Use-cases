@@ -99,7 +99,6 @@ Contributed by Grace Rachmany
  3. IID for local currencies -- IID uniquely identifies local currencies, providing a moniker that can be applied without ambiguity across any exchange. In other words, there’s no confusion about which chain gets to be called “BTC” or similar market problems.
     a. Circles UBI
     b. Sarafu
-    c. Eusko
     d. SEEDS
  
  ( I believe we agreed to split this into two use cases, keeping the purely crypto-crypto exchange for the focal use case and raising the crypto -> non-crypto use case in the domain map rather than as a focal use case.
