@@ -72,3 +72,81 @@ Once operational, Helen finds a verification agent, Lynn, who was able to inspec
 ## UC15 Verified Impact
 
 Lynn is a verification agent for REC2022. She is called by HydroElec to audit their new production facility. After reviewing the certified proposal, she visits the HydroElec site to inspect and verify both the capacity of the system under operating conditions and the security of the automated smart meters. She uses a standard set of criteria established by the UN to record her observations and make a determination about the project’s compliance with both its certified proposal and UN requirements. After finding everything in order, Lynn issues a verification credential with a six month expiry and a maximum capacity of 20 billion kWh, which she gives to HydroElec. The credential references both the original proposal and its certification using machine-verifiable identifiers to ensure the authenticity of the verification.
+
+
+# Focal Use Cases
+# Renewable Energy Certificates
+Contributed by ixo
+## Background
+
+When an NFT represents one or more real-world resources, which are linked to the NFT, there must be a process for verifying the assertions which are made about these physical or virtual resources, to determine if the assertions are both true and positively correlated with the resource.
+
+In this hypothetical scenario, the UN’s International Climate Change Authority (UNFCCC) establishes a semi-automatic certification and verification system for creating official, digital UN Renewable Energy Certificates or REC NFTs.
+
+HydroElec Inc., has recently upgraded a dam to support the production of hydroelectric power and is going through the process of claiming 100 tons of Carbon Credits from the UN’s International Climate Change Authority (UNFCCC). By using the UN’s new system for digital RECs, HydroElec is able to reliably monetize the environmental impact of creating clean electricity with minimal bureaucratic overhead.
+## Scenario
+The UNFCCC defines a class template for the REC2022 NFT and registers this token on the ixo blockchain. They also certify Certification Agents and Claim Verification Agents, issuing these agents Verifiable Credentials. Providing these entities with the proper capabilities and Verifiable Credentials to prove their qualifications.
+
+HydroElec starts a new project and creates a formal proposal that meets the UNFCCC requirements. This proposal is digitally signed by HydroElec and submitted to the UNFCCC. The UNFCCC forwards the proposal to an assigned Certifier who reviews the proposal and, finding it meritorious, issues a Certification Credential, which they give to HydroElect.
+
+After certification, HydroElec can now produce verifiable credentials attesting to the production of clean energy according to the proposal. Once the system is operational, they contract a UN Claim Verifier who visits the project site, inspects the capacity, measures current production, and evaluates the Verifiable Credentials created by HydroElect’s turbines. Finding everything in order, The verifier issues their own findings in a Verifiable Credential, which is given to HydroElec.
+
+Once they have all the necessary credentials HydroElect submits everything to the ixo NFT module (where the UNFCCC registered their token), which triggers the minting of official UNFCCC Renewable Energy NFTs, issued directly to HydroElec. HydroElec submits regularly to transform his hydro plant’s output into NFTs on a regular basis. They can take these NFTs to any market and exchange them for digital or fiat currency, as enabled by the markets.
+
+## Distinctions
+
+This use case presents a complex set of capabilities for automatiing the verification of real world impact. The token module used by the UN must be able to support the ability to set sophisticated constraints on the minting of NFTs by otherwise unknown parties: it isn't the UN that mints the NFTs, it is the REC producer, who mints the NFTs according to specific policies set by the UN. These policies must be programmatically specifiable and verifiable, so that once set up, the operational creation of NFTs no longer requires UN interaction.
+## Artifacts
+
+A list of key technical artifacts used to realize the use case:
+
+### Verifiable Credentials
+
+1. Project Proposal
+2. Certifier Credential
+3. Verifier Credential
+4. Project Certification
+5. Project Verification
+6. Electricity Production
+
+### DIDs
+
+1. HydroElec
+2. UNFCCC
+3. Certifier
+4. Verifier
+5. Project (as registered)
+
+### IIDs
+1. The NFT class created by the UNFCCC
+2. The particular NFT tokens minted
+
+### Trust/liability Hierarchy
+
+The UNFCC needs to trust the certifiers and verifiers it authorizes
+The certifiers and verifiers are liable for the quality of their certifications and verifications, respectively
+
+1. HydroElect is liable for implementing its project according to its proposal
+2. HydroElect is liable for the accuracy of its smart meters
+
+### Threat Model
+
+**Threat**: Fake smart meters (over production, false meta-data)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Periodic, random, on-site inspections)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Certified hardware)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Signed (unforgeable) certifications and verifications.)<br/>
+
+### Sustainability
+
+Cost-effective catalysts for renewable energy will increase the funding available for, and investment in renewable energy sources, which will increase the amount of affordable, renewable energy, in direct support of SDG 7 Affordable and Clean Energy.
+
+### Diversity & Inclusion
+
+The semi-automated production of NFTs using third party certifiers and verifiers should enable a range of choice for producers trying to improve the profitability of their clean energy projects. To the extent that this program can be cost effectively set up and managed, a broader population of producers should have access to impact funds. Once the REC NFTs are created, the ready availability of decentralized markets should also democratize access to the most profitable impact fund buyers, without dependency of existing trade relationships, making it easier for small, independent operators to participate on equal footing with larger providers.
+
+### Requirements
+
+1. Class-specific token templates that expose specific attributes of the REC NFT, such as how the REC was generated (hydro v diesel).
+2. Verifiably associated resources to enable retrieving and verifying arbitrary resources provided as evidence for creating the NFT. That is, the NFT itself points, in a verifiable way, to the specific credentials that were used to mint the NFT.
+3. Privacy controls for protecting sensitive information that is nevertheless verifiable. In other words, the associated resources (or specific meta-data attributes) must be provable if known, but are not published publicly.
+4. Delegatable authorization to perform verification services and issue claim. This must enable agencies to earn UN certification and delegate the privilege of issuing UN-endorsed credentials to staff, subcontractors, or other agents.
