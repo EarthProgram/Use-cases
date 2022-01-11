@@ -72,3 +72,84 @@ Once operational, Helen finds a verification agent, Lynn, who was able to inspec
 ## UC15 Verified Impact
 
 Lynn is a verification agent for REC2022. She is called by HydroElec to audit their new production facility. After reviewing the certified proposal, she visits the HydroElec site to inspect and verify both the capacity of the system under operating conditions and the security of the automated smart meters. She uses a standard set of criteria established by the UN to record her observations and make a determination about the project’s compliance with both its certified proposal and UN requirements. After finding everything in order, Lynn issues a verification credential with a six month expiry and a maximum capacity of 20 billion kWh, which she gives to HydroElec. The credential references both the original proposal and its certification using machine-verifiable identifiers to ensure the authenticity of the verification.
+
+# Focal Use Cases
+
+# Shang-chi Proves Impact
+## Background
+Shang-Chi is the Manager of a Hong Kong social enterprise - EldHealth focusing on elderly physical health. Over the past years, EldHealth has expanded rapidly in its operation and has many beneficiaries enrolled in its signature program, iHealth. In order to get more funding, Shang-Chi needs to prove that beneficiaries have become healthier as a result of enrolling in iHealth. 
+
+However, the authenticity of the data report Shang-Chi has produced has received a lot of doubt from his new funders as there has not been a good working relationship and trust established between the two yet. 
+
+The new funders have shown low confidence in the authenticity of the data, which shows that 99.9% of the beneficiaries improved in health in only 6 months since enrolling in iHealth. Shang-Chi thus needs to ensure the organization’s impact accountability to its funders. The data (reported by the beneficiaries) against the intended outcomes need to be validated. 
+
+To do so, the manager uses a platform to allow him to ensure the authenticity of the data submitter (beneficiary) and know the time and date of the data submission. The manager also has the ability to validate the credibility of the outcome data based on external evidence (e.g. photos, documents - offchain data). 
+
+## Scenario
+
+Shang-Chi collects data about the health of beneficiaries who joined iHealth. He sends standard survey forms through the platform to target beneficiaries weekly, which data are then submitted back to Shang-Chi with evidence attached (e.g. photos of blood pressure records and weight measurement). Having all this information associated with the data, Shang-Chi then evaluates the data submitted and approves each submission record by signing on it (digitally). These validated data are incorporated into the reports to funder, which will be auditable, accountable, and traceable.
+ 
+## Distinction
+
+This use case is difficult because:
+- Manager wants to ensure the authenticity without violating the data privacy of the beneficiaries
+- The procedure of submitting health documents are complicated
+- Beneficiaries have low incentive to provide personal health data 
+
+ 
+## Artifacts
+### Verifiable Credentials
+
+* **Health surveys** - created by beneficiaries and verified by Shang-chi upon assessing attached supporting documents along health surveys.
+
+### DIDs
+
+* **Beneficiaries** - to ensure beneficiaries who submit claims are enrolled in iHealth; used when submitting health surveys weekly
+* **Shang-chi** - to evaluate the claims submitted by beneficiaries; used when evaluating the health surveys
+
+### IIDs
+
+NFTs (as digital certificate in health program eg. vaccination records, pay for health outcomes) to provide incentive for beneficiary to provide data NFT (future development)
+
+## Trust Hierarchy
+* Beneficiaries are liable for tracking their health and for submitting data on time
+* Beneficiaries are liable for providing honest and real health data
+* Beneficiaries must stay enrolled in iHealth over the course of the monitoring
+* Shang-Chi is liable for keeping the health data confidential
+* Shang-Chi is liable for producing accurate and timely reports to funders based on gathered data 
+* Shang-Chi is liable for verifying the evidence submitted by the beneficiaries
+* Shang-Chi is liable for retaining evidence for potential audits, in a privacy preserving manner
+
+## Threat Model
+* **Threat**: Beneficiaries may not know how to submit data digitally
+  * **Response**: provide training to beneficiaries
+  * **Response**: ask beneficiaries’ caretaker to submit for them
+  * **Response**: send EldHealth’s staff to beneficiaries’ home to collect data in person
+
+* **Threat**: Beneficiaries may worry about data privacy and do not want to provide personal health data 
+  * **Response**: data are anonymous; there will only be basic info (not identifiable) of the beneficiaries
+  * **Response**: The report produced contains only aggregated data
+
+**Threat**: Beneficiaries may produce fake data
+  * **Response**: random assessment to ensure data authenticity
+  * **Response**: bring in third party evaluator, e.g. doctor, caretaker to validate data
+
+## Sustainability
+GOAL 3: Good Health and Well-being - with more funding from funders given the proven success of iHealth, the program can continue to expand to serve more beneficiaries in Hong Kong
+
+## Diversity & Inclusion
+
+The program will improve social inclusiveness as it will help improve health of elderly, especially among the disadvantaged groups, e.g. ethic minorities, single elderly persons, low income individuals.
+
+Elderly under the program will also less likely be stigmatized as individual health data are secured.
+
+## Requirements
+
+1. A mobile device for beneficiaries to use to submit data  
+2. Cryptographically verifiable authorship of submitted evidence.
+3. Verifiable 3rd party evaluation of submissions.
+4. Retention for auditability, presumably checked by the government every 4 years.
+5. Cryptographically secured timestamping
+6. On-chain proof-of-existence (record a hash on chain) MUST. Demonstrates content exists BEFORE the point in time demarcated by that blockheight.
+7. Embedded proof-of-time (recording a state of chain in a signed artifact). MAY. Demonstrates that the signed artifact was signed AFTER the point in time represented by that chain state.
+8. The approach MUST be able to scale to serve the populations of Hong Kong, Taiwan, and South East Asia. The initial MVP must be able to support 5000 organizations, and each organization may engaged 2,000-5,000 people, for a soft estimate of 25,000,000 people.
