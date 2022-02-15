@@ -86,14 +86,14 @@ Carbon accounting and science: Carbon accounting should follow the natural carbo
 
 There are three major types of carbon credits.
 
-**Avoided emissions** -- a factory spent money to increase efficiency and can claim credits as they reduce emissions). 
+**Avoided emissions** -- A factory spent money to increase efficiency and can claim credits as they reduce emissions. 
 
-**Renewable Energy Credits** -- a city shifts from fossil fuel based energy to renewable energy and claims credits associated with the quantification of carbon emissions reduction
+**Renewable Energy Credits** -- A city shifts from fossil fuel based energy to renewable energy and claims credits associated with the quantification of carbon emissions reduction.
 
 **Natural carbon or “living carbon”** -- Encapsulated by “terraculture” and “mariculture” (AFOLU: Agriculture, Forestry and other Land Use) and Blue Carbon in which sequestration and/or maintenance of carbon stocks in living systems is monitored and quantified.
 
 ## Scenario
-Acme Ag and their ecosystem of farmers, processors, and logistics providers, would like to meet the ambitious goals of carbon neutrality by 2030, and even explore if providing carbon credits to industries that cannot hope to achieve carbon negative operations (such as the energy sector, could become a long term profit center.
+Acme Ag and their ecosystem of farmers, processors, and logistics providers, would like to meet the ambitious goals of carbon neutrality by 2030, and even explore if providing carbon credits to industries that cannot hope to achieve carbon negative operations, such as the energy sector, could become a long term profit center.
 
 Acme Ag wants to be able to have accurate carbon reporting internally, as well as participate in markets to buy and sell carbon credits to ensure year over year they can meet carbon accounting goals 1st and position themselves to be a provider of carbon to the market they believe is coming, in partnership with their farmers.
 
@@ -103,11 +103,11 @@ A start up carbon market (Market1) approaches her with an easy monitoring and ve
 
 Acme Ag partners with a second marketplace (Market2) which has a higher price, and a different and more rigorous verification threshold. Jane second guesses her decision and registers on Market2 as well as Market1.
 
-The first round of carbon credits have already been issued. The transition of carbon from Market1 to Market2 requires running additional data collection and uses a different quantification algorithm that is considered by many to be more rigorous and has less uncertainty. Market2 is running on a cosmosSDK chain.
+The first round of carbon credits have already been issued. The transition of carbon from Market1 to Market2 requires running additional data collection and uses a different quantification algorithm that is considered by many to be more rigorous and have less uncertainty. Market2 is running on a cosmosSDK chain.
 
 Acme Ag agrees to underwrite the cost of additional verification.
 
-Acme Ag does not want Farmer Jane's geolocation to be public and desires that this data be kept private and only available to approved monitors and verifiers in the system because they are worried about a competing company poaching their high performing farmers
+Acme Ag does not want Farmer Jane's geolocation to be public and desires that this data be kept private and only available to approved monitors and verifiers in the system because they are worried about a competing company poaching their high performing farmers.
 
 
 ## Distinction / Challenge
