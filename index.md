@@ -89,13 +89,13 @@ The UNFCCC defines a class template for the REC2022 NFT and registers this token
 
 HydroElec starts a new project and creates a formal proposal that meets the UNFCCC requirements. This proposal is digitally signed by HydroElec and submitted to the UNFCCC. The UNFCCC forwards the proposal to an assigned Certifier who reviews the proposal and, finding it meritorious, issues a Certification Credential, which they give to HydroElect.
 
-After certification, HydroElec can now produce verifiable credentials attesting to the production of clean energy according to the proposal. Once the system is operational, they contract a UN Claim Verifier who visits the project site, inspects the capacity, measures current production, and evaluates the Verifiable Credentials created by HydroElect’s turbines. Finding everything in order, The verifier issues their own findings in a Verifiable Credential, which is given to HydroElec.
+After certification, HydroElec can now produce Verifiable Credentials attesting to the production of clean energy according to the proposal. Once the system is operational, they contract a UN Claim Verifier who visits the project site, inspects the capacity, measures current production, and evaluates the Verifiable Credentials created by HydroElect’s turbines. Finding everything in order, The verifier issues their own findings in a Verifiable Credential, which is given to HydroElec.
 
 Once they have all the necessary credentials HydroElect submits everything to the ixo NFT module (where the UNFCCC registered their token), which triggers the minting of official UNFCCC Renewable Energy NFTs, issued directly to HydroElec. HydroElec submits regularly to transform his hydro plant’s output into NFTs on a regular basis. They can take these NFTs to any market and exchange them for digital or fiat currency, as enabled by the markets.
 
 ## Distinctions
 
-This use case presents a complex set of capabilities for automatiing the verification of real world impact. The token module used by the UN must be able to support the ability to set sophisticated constraints on the minting of NFTs by otherwise unknown parties: it isn't the UN that mints the NFTs, it is the REC producer, who mints the NFTs according to specific policies set by the UN. These policies must be programmatically specifiable and verifiable, so that once set up, the operational creation of NFTs no longer requires UN interaction.
+This use case presents a complex set of capabilities for automating the verification of real world impact. The token module used by the UN must be able to support the ability to set sophisticated constraints on the minting of NFTs by otherwise unknown parties: it isn't the UN that mints the NFTs, it is the REC producer, who mints the NFTs according to specific policies set by the UN. These policies must be programmatically specifiable and verifiable, so that once set up, the operational creation of NFTs no longer requires UN interaction.
 ## Artifacts
 
 A list of key technical artifacts used to realize the use case:
@@ -132,13 +132,13 @@ The certifiers and verifiers are liable for the quality of their certifications 
 ### Threat Model
 
 **Threat**: Fake smart meters (over production, false meta-data)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Periodic, random, on-site inspections)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Certified hardware)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Signed (unforgeable) certifications and verifications.)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Periodic, random, on-site inspections<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Certified hardware<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Response**: Signed (unforgeable) certifications and verifications.<br/>
 
 ### Sustainability
 
-Cost-effective catalysts for renewable energy will increase the funding available for, and investment in renewable energy sources, which will increase the amount of affordable, renewable energy, in direct support of SDG 7 Affordable and Clean Energy.
+Cost-effective catalysts for renewable energy will increase the funding available for, and investment in, renewable energy sources. This will increase the amount of affordable, renewable energy, in direct support of SDG 7 Affordable and Clean Energy.
 
 ### Diversity & Inclusion
 
@@ -149,4 +149,4 @@ The semi-automated production of NFTs using third party certifiers and verifiers
 1. Class-specific token templates that expose specific attributes of the REC NFT, such as how the REC was generated (hydro v diesel).
 2. Verifiably associated resources to enable retrieving and verifying arbitrary resources provided as evidence for creating the NFT. That is, the NFT itself points, in a verifiable way, to the specific credentials that were used to mint the NFT.
 3. Privacy controls for protecting sensitive information that is nevertheless verifiable. In other words, the associated resources (or specific meta-data attributes) must be provable if known, but are not published publicly.
-4. Delegatable authorization to perform verification services and issue claim. This must enable agencies to earn UN certification and delegate the privilege of issuing UN-endorsed credentials to staff, subcontractors, or other agents.
+4. Delegatable authorization to perform verification services and issue claims. This must enable agencies to earn UN certification and delegate the privilege of issuing UN-endorsed credentials to staff, subcontractors, or other agents.
