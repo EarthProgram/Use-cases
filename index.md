@@ -73,6 +73,81 @@ Once operational, Helen finds a verification agent, Lynn, who was able to inspec
 
 Lynn is a verification agent for REC2022. She is called by HydroElec to audit their new production facility. After reviewing the certified proposal, she visits the HydroElec site to inspect and verify both the capacity of the system under operating conditions and the security of the automated smart meters. She uses a standard set of criteria established by the UN to record her observations and make a determination about the project’s compliance with both its certified proposal and UN requirements. After finding everything in order, Lynn issues a verification credential with a six month expiry and a maximum capacity of 20 billion kWh, which she gives to HydroElec. The credential references both the original proposal and its certification using machine-verifiable identifiers to ensure the authenticity of the verification.
 
+# Focal Use Cases
+
+## Hungry Lisbon Traveler
+Contributed by Grace Rachmany
+
+### Background
+ In the context of creating an alternative to the default economy, people want to be able to use and exchange alternative currencies, using their alternative currency wallets as easily as they use a credit card. When people use a credit card, neither the buyer nor the seller needs to worry about the exchange rate--the transaction happens seamlessly. The seller receives their local currency, and the buyer is debited in their local currency.
+ 
+ The vision of the ICF, and the cryptocurrency movement as a whole, is that people will be free to use whatever means of exchange they choose, and that communities will be free to create their own means of exchange.
+ 
+ ### Scenario
+ Grace is an advisor to different community currency groups. She has a Circles and a SEEDS wallet and some Sarafu. While in Basque country, she is looking for a restaurant that accepts community currencies. She uses the Open Street Maps to identify a restaurant which accepts community currency, in this case Chiemgauer. Her wallet allows her to convert Circles to Eusko and buy a meal for herself and a colleague at Nina’s Cafe.
+ 
+ Nina and other businesspeople are able to use a debt clearing house to clear debts within the community currency framework, or to use an exchange to trade one currency for the other.
+ 
+ ### Distinction / Challenge
+ * Different currencies have different issuance mechanisms (mutual credit, reserve backing, airdrop, UBI, backing based on goods).
+ * Most community currencies can’t be exchanged directly for a fiat currency as a means of exchange.
+ * Generally community currencies have closed software systems, without interfaces to other currencies or exchanges.
+ 
+ ### Artifacts
+ 1. Multi-coin wallet for community currencies.
+ 2. Interchain currency exchange standard
+ 3. IID for local currencies -- IID uniquely identifies local currencies, providing a moniker that can be applied without ambiguity across any exchange. In other words, there’s no confusion about which chain gets to be called “BTC” or similar market problems.
+    a. Circles UBI
+    b. Sarafu
+    c. SEEDS
+ 
+ ### Trust/Liability Hierarchy
+ 1. Nina needs to trust that Grace has a legitimate wallet.
+ 2. The Circles and chiemgauer networks need to trust one another to meet their financial obligations in case of trade imbalances.
+ 3. Nina needs to trust the chiemgauer network to honor their financial obligations.
+ 4. Grace needs to trust the Circles network to issue tokens that will have value in other locations.
+ 5. The clearing house has to honor its obligations.
+ 
+ ### Threat Model
+ **Threat**: Potential for currencies in the system to collapse or not have backings.
+ 
+ * **Response**: Monetary policies for being a part of the network.
+ * **Response**: Stop trading currencies if exchange of a particular currency is too volatile.
+ 
+ **Threat**: Trade imbalances.
+ 
+ * **Response**: Require some level of reserve in an agreed-upon currency.
+ * **Response**: Track history and have a warning system before imbalances get too great.
+ 
+ **Threat**: Potential to have fake wallets or fake credentials.
+ 
+ * **Response**: Check ID with payment
+ * **Response**: Use biometrics for authentic identification
+ * **Response**: Have insurance that covers the expected amount of faking in the system
+ 
+ **Threat**: Hacking and code bugs.
+ 
+ * **Response**: Test suites with thorough test coverage
+ * **Response**: Open issue tracking for public reporting of bugs and bug fixes
+ * **Response**: Open source software so more people can review the codebase and discuss potential problems and fixes.
+ 
+ **Threat**: Regulatory: local currencies may not be legal within a given jurisdiction.
+ 
+ * **Response**: ZKP options and invisibility of the network.
+ * **Response**: Lobbying for improved laws; invest percentage of reserve towards lobbying.
+ * **Response**: Legal council to keep things within the law until it’s too large to regulate away.
+ 
+ ## Sustainability
+ Local purchases with local currency helps reduce costs of transportation of goods, keeping purchasing local. Based on the values of these local communities, they can create currencies that reflect sustainable values, carbon-neutrality, circular economies, etc.
+ 
+ (can we tie this more clearly to a specific SDG?)
+ 
+ ## Diversity & Inclusion
+
+These currencies are open to different communities and are intrinsically both inclusive and exclusive. Communties retain their culture and values, while encouraging local economies, which is exclusive. They can now trade with one another, which is inclusive. 
+
+ ## Requirements
+
 ## UC22 DAO Discipline
 
 The Ndugu Vijana Chama’s CIC currency has reached 80 cents on the shilling for the third time this year. The other Chamas need to decide on whether to take disciplinary action, rehabilitative action, or to expel the group from the Sarafu Network. They have a deliberation. There are 2 proposals for rehabilitation, 1 proposal for disciplinary action, and 1 proposal to eject them. Each chama has a weighted vote based on the number of people in the chama, and based on the status of the chama (reputation) in the network. Each Chama receives 10 points to distribute among the 5 proposals on the table. They can give all votes to one or divide their points between the different proposals depending on the strength of each proposal.
