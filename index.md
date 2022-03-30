@@ -148,3 +148,6 @@ These currencies are open to different communities and are intrinsically both in
 
  ## Requirements
 
+## UC22 DAO Discipline
+
+The Ndugu Vijana Chama’s CIC currency has reached 80 cents on the shilling for the third time this year. The other Chamas need to decide on whether to take disciplinary action, rehabilitative action, or to expel the group from the Sarafu Network. They have a deliberation. There are 2 proposals for rehabilitation, 1 proposal for disciplinary action, and 1 proposal to eject them. Each chama has a weighted vote based on the number of people in the chama, and based on the status of the chama (reputation) in the network. Each Chama receives 10 points to distribute among the 5 proposals on the table. They can give all votes to one or divide their points between the different proposals depending on the strength of each proposal.
